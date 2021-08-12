@@ -1,0 +1,11 @@
+i1                     add $t5, $t1, $t0
+i2                     addi $t2, $t0, 400
+                    nop
+                    nop
+i3              Soma:  lw $t1, 0($t2)
+i4                     add $t5, $t5, $t1 
+i5                     div $t6, $t1, $t8
+i6                     subi $t2, $t2, 4
+i7                     sw $t5, 0($t2)
+i8                     mult $t8, $t8, $t10
+i9                     bne $t2, $zero, Soma
